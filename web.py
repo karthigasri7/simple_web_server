@@ -1,5 +1,5 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
+ """
 <!DOCTYPE html>
 <html>
    <head>

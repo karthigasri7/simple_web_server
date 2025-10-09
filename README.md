@@ -21,7 +21,8 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:
- """
+
+ 
 <!DOCTYPE html>
 <html>
    <head>
@@ -82,7 +83,8 @@ httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
 
-```
+
+
 # OUTPUT:
 
 ![alt text](<Screenshot 2025-10-07 014226.png>)
