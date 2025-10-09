@@ -21,8 +21,8 @@ Serving the HTML pages.
 Testing the webserver.
 
 # PROGRAM:
-
- 
+from http.server import HTTPServer, BaseHTTPRequestHandler
+content = """
 <!DOCTYPE html>
 <html>
    <head>
@@ -31,7 +31,7 @@ Testing the webserver.
       </title>
    </head>
 <body>
-    <h1>DEVICE SPECIFICATION(karthiga sri)</h1>
+    <h1>DEVICE SPECIFICATION(KARTHIGA SRI)</h1>
     <table border="5"cellpadding="10"cellspacing="10";
     <tr bgcolour="yellow">
        <th>S.NO</th>
@@ -71,6 +71,7 @@ Testing the webserver.
 </body>
 </htmL>
 
+"""
 class myhandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request received")
@@ -82,6 +83,8 @@ server_address = ('',8000)
 httpd = HTTPServer(server_address,myhandler)
 print("my webserver is running...")
 httpd.serve_forever()
+
+ 
 
 
 
